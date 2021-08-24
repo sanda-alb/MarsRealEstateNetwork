@@ -49,7 +49,7 @@ class PhotoGridAdapter: ListAdapter<MarsProperty, PhotoGridAdapter.MarsPropertyV
 
     }
 
-    class MarsPropertyViewHolder(private var binding: GridViewItemBinding) :
+    class MarsPropertyViewHolder(private var binding: GridViewItemBinding):
             RecyclerView.ViewHolder(binding.root) {
 
                 fun bind(marsProperty: MarsProperty) {
