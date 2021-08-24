@@ -23,8 +23,8 @@
 
     <data>
         <variable
-            name="viewModel"
-            type="com.example.android.marsrealestate.overview.OverviewViewModel" />
+            name="property"
+            type="com.example.android.marsrealestate.network.MarsProperty" />
     </data>
         
 
@@ -36,5 +36,5 @@
         android:adjustViewBounds="true"
         android:padding="2dp"
         tools:src="@tools:sample/backgrounds/scenic"
-        app:imageUrl="@{viewModel.property.imgSrcUrl}"/>
+        app:imageUrl="@{property.imgSrcUrl}"/>
 </layout>
