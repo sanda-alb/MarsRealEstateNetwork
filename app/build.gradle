@@ -19,6 +19,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 apply plugin: "androidx.navigation.safeargs"
+apply plugin: 'kotlin-parcelize'
 
 android {
     compileSdkVersion 30
@@ -57,6 +58,7 @@ dependencies {
     // Navigation
     implementation "androidx.navigation:navigation-fragment-ktx:$version_navigation"
     implementation "androidx.navigation:navigation-ui-ktx:$version_navigation"
+
     // Core with Ktx
     implementation "androidx.core:core-ktx:$version_core"
 
