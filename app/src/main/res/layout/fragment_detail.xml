@@ -45,7 +45,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:src="@tools:sample/backgrounds/scenic"
-                app:imageUrl="@{viewModel.selecktedProperty.imgSrcUrl}"/>
+                app:imageUrl="@{viewModel.selectedProperty.imgSrcUrl}"/>
 
             <TextView
                 android:id="@+id/property_type_text"
@@ -56,6 +56,9 @@
                 android:textSize="39sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/main_photo_image"
+
+                android:text="@{viewModel.displayPropertyType}"
+
                 tools:text="To Rent" />
 
             <TextView
@@ -67,6 +70,7 @@
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/property_type_text"
+                android:text="@{viewModel.displayPropertyPrice}"
                 tools:text="$100,000" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
